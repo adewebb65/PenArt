@@ -653,7 +653,7 @@ footer a { color: var(--muted-gold); text-decoration: none; }
 
    <!-- Piece 1 — Botanical (green/yellow) -->
     <div class="gallery-item reveal">
-      <div class="gallery-image" data-lightbox="1">
+      <div class="gallery-image" data-lightbox="0">
         <img src="WallArt2.jpg" alt="Botanical resin art by Penny Webb" loading="lazy">
       </div>
       <div class="gallery-info">
@@ -669,7 +669,7 @@ footer a { color: var(--muted-gold); text-decoration: none; }
     
     <!-- Piece 2 — Botanical leaves -->
     <div class="gallery-item reveal">
-      <div class="gallery-image" data-lightbox="0">
+      <div class="gallery-image" data-lightbox="1">
         <img src="WallArt1.jpg" alt="Pinks of summer, Botanical Resin Art by Penny Webb" loading="lazy">
       </div>
       <div class="gallery-info">
@@ -800,7 +800,7 @@ revealElements.forEach(el => observer.observe(el));
 // ─── LIGHTBOX ───
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = lightbox.querySelector('img');
-const images = ['WallArt1.jpg', 'WallArt2.jpg', 'WallArt3.jpg', 'seascape1.jpg'];
+const images = ['WallArt2.jpg', 'WallArt1.jpg', 'WallArt3.jpg', 'WallArt4.jpg', 'seascape1.jpg'];
 let currentIndex = 0;
 
 document.querySelectorAll('[data-lightbox]').forEach(el => {
