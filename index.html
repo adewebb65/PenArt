@@ -262,6 +262,10 @@ section { padding: 8rem 3rem; }
   object-fit: cover;
   transition: transform 1.2s cubic-bezier(0.25, 0, 0.15, 1);
 }
+.gallery-image img.fit-contain {
+  object-fit: contain;
+  background: var(--bg, #f5f1ea);
+}
 .gallery-image:hover img {
   transform: scale(1.06);
 }
@@ -693,7 +697,7 @@ footer a { color: var(--muted-gold); text-decoration: none; }
     <!-- Piece 4 — Seascape -->
     <div class="gallery-item reveal">
       <div class="gallery-image" data-lightbox="3">
-        <img src="seascape.png" alt="Seascape resin art by Penny Webb" loading="lazy">
+        <img src="seascape.png" alt="Seascape resin art by Penny Webb" loading="lazy" class="fit-contain">
       </div>
       <div class="gallery-info">
         <span class="piece-number">04</span>
